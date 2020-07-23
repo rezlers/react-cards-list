@@ -6,7 +6,7 @@ function RightPane(props) {
     const {operations} = props;
 
     return (
-        <div className={`${styles['right-pane']} overflow-auto`}>
+        <div className={`${styles['right-pane']} overflow-auto `}>
             {
                 operations.map((item, index) => {
                     return (

@@ -6,7 +6,7 @@ function CardsContainer(props) {
     const {cardsList, deleteCard} = props;
 
     return (
-        <div className={`${styles['cards-container']} overflow-auto`}>
+        <div className={`${styles['cards-container']} overflow-auto border border-secondary`}>
             {
                 cardsList.map((item, index) => {
                     return (
