@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f5a3f7-5b41-47f0-8898-5f36f484594f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_task.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/CardsContainer/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/CardsContainer/Card/Card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/Card/Card.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/CardsContainer/CardsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/CardsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/CardsContainer/CardsContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/CardsContainer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/LeftPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/LeftPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeftPane/LeftPane.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/LeftPane.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RightPane/OperationCard/OperationCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RightPane/OperationCard/OperationCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RightPane/RightPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RightPane/RightPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RightPane/RightPane.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RightPane/RightPane.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/CardsContainer/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LeftPane/LeftPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeftPane/LeftPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RightPane/RightPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RightPane/RightPane.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,17 +25,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1f4zfQgAIMHPOMpURRbQw1DzzB3" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -74,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595492255538</updated>
-      <workItem from="1595492256901" duration="13665000" />
+      <workItem from="1595492256901" duration="32627000" />
     </task>
     <servers />
   </component>

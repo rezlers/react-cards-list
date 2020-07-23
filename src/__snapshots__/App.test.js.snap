@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardsContainer renders correctly on adding/deleting/sorting values in CardsList CardsContainer renders correctly after adding a new node 1`] = `
+<div
+  className="cards-container overflow-auto border border-secondary"
+>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+</div>
+`;
+
+exports[`CardsContainer renders correctly on adding/deleting/sorting values in CardsList CardsContainer renders correctly after adding a new node 2`] = `
+<div
+  className="cards-container overflow-auto border border-secondary"
+>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    2
+  </div>
+</div>
+`;
+
+exports[`CardsContainer renders correctly on adding/deleting/sorting values in CardsList CardsContainer renders correctly after deleting a node 1`] = `
+<div
+  className="cards-container overflow-auto border border-secondary"
+>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+</div>
+`;
+
+exports[`CardsContainer renders correctly on adding/deleting/sorting values in CardsList CardsContainer renders correctly before and after sorting 1`] = `
+<div
+  className="cards-container overflow-auto border border-secondary"
+>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    2
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    10
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    99
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    6
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    17
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    25
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    5
+  </div>
+</div>
+`;
+
+exports[`CardsContainer renders correctly on adding/deleting/sorting values in CardsList CardsContainer renders correctly before and after sorting 2`] = `
+<div
+  className="cards-container overflow-auto border border-secondary"
+>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    99
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    25
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    17
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    10
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    6
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    5
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    2
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+  <div
+    className="custom-card"
+  >
+    <i
+      className="fa fa-close delete-icon"
+      onClick={[Function]}
+    />
+    1
+  </div>
+</div>
+`;
+
+exports[`Testing adding card process Card component renders correctly 1`] = `
+<div
+  className="custom-card"
+>
+  <i
+    className="fa fa-close delete-icon"
+    onClick={[Function]}
+  />
+  1
+</div>
+`;
+
+exports[`Testing if single components renders correctly Testing Footer 1`] = `
+<div
+  className="footer-copyright text-center py-3 border border-secondary"
+>
+  <p>
+    Footer
+  </p>
+</div>
+`;
+
+exports[`Testing if single components renders correctly Testing Header 1`] = `
+<div
+  className="d-flex justify-content-start align-items-center border border-secondary"
+>
+  <button
+    className="btn btn-secondary mx-1 my-2"
+    onClick={[Function]}
+  >
+    Sort cards
+  </button>
+  <button
+    className="btn btn-secondary mx-1 my-2"
+    onClick={[Function]}
+  >
+    Add card
+  </button>
+</div>
+`;
+
+exports[`Testing if single components renders correctly Testing OperationCard 1`] = `
+<div
+  className="card"
+>
+  <p>
+    Sort cards
+  </p>
+</div>
+`;
+
+exports[`Testing if single components renders correctly Testing RightPane 1`] = `
+<div
+  className="right-pane overflow-auto "
+>
+  <div
+    className="card"
+  >
+    <p>
+      Add card: 0
+    </p>
+  </div>
+  <div
+    className="card"
+  >
+    <p>
+      Delete card: 0
+    </p>
+  </div>
+  <div
+    className="card"
+  >
+    <p>
+      Sort cards
+    </p>
+  </div>
+</div>
+`;

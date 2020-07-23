@@ -1,51 +1,63 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import CardsContainer from "./CardsContainer/CardsContainer";
 import styles from './LeftPane.module.css'
 
-function LeftPane(props) {
-    const {onDelete, onSort, onAdd} = props;
-    const [cardsList, setCardsList] = useState([]);
+class LeftPane extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            cardsList: []
+        };
+        this.addCard = this.addCard.bind(this);
+        this.deleteCard = this.deleteCard.bind(this);
+        this.sortCards = this.sortCards.bind(this)
+    }
 
-    function randInt(min, max) {
+    randInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const addCard = () => {
-        const newCardsList = [randInt(0,100)].concat(cardsList);
-        setCardsList(newCardsList);
-        onAdd(newCardsList.length - 1)
+    addCard() {
+        const newCardsList = [this.randInt(0,100)].concat(this.state.cardsList);
+        this.setState({cardsList: newCardsList});
+        this.props.onAdd(newCardsList.length - 1)
     };
 
-    const sortCards = () => {
-        setCardsList(cardsList.concat().sort());
-        onSort();
+    sortCards() {
+        this.setState({cardsList: this.state.cardsList.concat().sort(function (a, b) {
+            return b - a;
+        })});
+        this.props.onSort();
     };
 
-    const deleteCard = (cardIndex) => () => {
-        const newCardsList = cardsList.filter((item, index) => {
-            return index !== cardIndex;
-        });
-        setCardsList(newCardsList);
-        onDelete(cardIndex)
-    };
+    deleteCard(cardIndex) {
+        return () => {
+            const newCardsList = this.state.cardsList.filter((item, index) => {
+                    return index !== cardIndex;
+                });
+            this.setState({cardsList: newCardsList});
+            this.props.onDelete(cardIndex)
+    }};
 
-    return (
-        <div className={styles['left-pane']}>
-            <Header
-                addCard={addCard}
-                sortCards={sortCards}
-            />
-            <CardsContainer
-                cardsList={cardsList}
-                deleteCard={deleteCard}
-            />
-            <Footer/>
-        </div>
-    );
+    render() {
+        return (
+            <div className={styles['left-pane']}>
+                <Header
+                    addCard={this.addCard}
+                    sortCards={this.sortCards}
+                />
+                <CardsContainer
+                    cardsList={this.state.cardsList}
+                    deleteCard={this.deleteCard}
+                />
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 export default LeftPane
