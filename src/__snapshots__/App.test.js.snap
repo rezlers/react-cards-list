@@ -233,7 +233,7 @@ exports[`CardsContainer renders correctly on adding/deleting/sorting values in C
 </div>
 `;
 
-exports[`Testing adding card process Card component renders correctly 1`] = `
+exports[`Testing if single components renders correctly Card component renders correctly 1`] = `
 <div
   className="custom-card"
 >

@@ -25,25 +25,6 @@ describe('Testing adding card process', () => {
     expect(instance.state.cardsList[0]).toBeTruthy();
   });
 
-  test('Card component renders correctly', () => {
-      const component = mount(<LeftPane
-          onDelete = {() => {}}
-          onAdd = {() => {}}
-          onSort = {() => {}}
-      />);
-      const instance = component.instance();
-      instance.setState({
-          cardsList: [1]
-      });
-      const tree = renderer
-          .create(<Card
-              value={instance.state.cardsList[0]}
-              deleteCard={instance.deleteCard(0)}
-          />)
-          .toJSON();
-      expect(tree).toMatchSnapshot();
-  });
-
 });
 
 describe('Testing deleting card process', () => {
@@ -221,6 +202,15 @@ describe('Testing if single components renders correctly', () => {
         const tree = renderer
             .create(<OperationCard
                 msg = "Sort cards"
+            />)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
+    });
+    test('Card component renders correctly', () => {
+        const tree = renderer
+            .create(<Card
+                value={1}
+                deleteCard={() => {}}
             />)
             .toJSON();
         expect(tree).toMatchSnapshot();
