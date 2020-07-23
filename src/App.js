@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
+import RightPane from "./RightPane/RightPane";
+import LeftPane from "./LeftPane/LeftPane";
+import styles from './App.module.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [operations, setOperations] = useState([]);
+
+
+    return (
+        <div className={`${styles['app-container']} container`}>
+            <div className='row'>
+                <div className='col-9'>
+                    <LeftPane
+                        onDelete={(index) => setOperations([...operations, `Delete card: ${index}`])}
+                        onAdd={(index) => setOperations([...operations, `Add card: ${index}`])}
+                        onSort={() => setOperations([...operations, `Sort cards`])}
+                    />
+                </div>
+                <div className='col-3'>
+                    <RightPane
+                        operations={operations}
+                    />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
+
+if (document.getElementById('root')) {
+    ReactDOM.render(<App />, document.getElementById('root'));
+}

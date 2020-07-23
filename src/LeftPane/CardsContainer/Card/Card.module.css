@@ -1,0 +1,22 @@
+.custom-card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border: solid 2px black;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+}
