@@ -10,6 +10,7 @@ import CardsContainer from "./Components/LeftPane/CardsContainer/CardsContainer"
 import Header from "./Components/LeftPane/Header/Header";
 import Footer from "./Components/LeftPane/Footer/Footer";
 import OperationCard from "./Components/RightPane/OperationCard/OperationCard";
+import {SORT_CALLBACK} from "./constants/constants";
 
 configure({ adapter: new Adapter() });
 
@@ -63,13 +64,9 @@ describe('Testing sorting cardsList process', () => {
             for(let i = 0; i < CARDS_NUM; i++) {
                 instance.addCard();
             }
-        } while (instance.state.cardsList === instance.state.cardsList.concat().sort((a, b) => {
-            return b - a
-        }));
+        } while (instance.state.cardsList === instance.state.cardsList.concat().sort(SORT_CALLBACK));
         instance.sortCards();
-        expect(instance.state.cardsList).toMatchObject(instance.state.cardsList.concat().sort((a, b) => {
-            return b - a
-        }));
+        expect(instance.state.cardsList).toMatchObject(instance.state.cardsList.concat().sort(SORT_CALLBACK));
     });
 
 });

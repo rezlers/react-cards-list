@@ -3,6 +3,7 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import CardsContainer from "./CardsContainer/CardsContainer";
 import styles from './LeftPane.module.css'
+import { SORT_CALLBACK } from "../../constants/constants";
 
 class LeftPane extends React.Component {
     constructor(props) {
@@ -28,9 +29,7 @@ class LeftPane extends React.Component {
     };
 
     sortCards() {
-        this.setState({cardsList: this.state.cardsList.concat().sort(function (a, b) {
-            return b - a;
-        })});
+        this.setState({cardsList: this.state.cardsList.concat().sort(SORT_CALLBACK)});
         this.props.onSort();
     };
 
